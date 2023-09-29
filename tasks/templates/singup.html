@@ -1,0 +1,9 @@
+<h1> testianding </h1>
+
+<form action="/singup"/ method="POST">
+    {% csrf_token %} #tokendeseguridad
+    {{form.as_p}}
+    <button>
+        Singup 
+    </button>
+</form>
