@@ -1,9 +1,15 @@
-<h1> testianding </h1>
+{% extends 'base.html' %}
+{% block content %}
+<h1> singup </h1>
 
-<form action="/singup"/ method="POST">
-    {% csrf_token %} #tokendeseguridad
+{{error}}
+
+<form action="/singup/" method="POST">
+    {% csrf_token %} 
     {{form.as_p}}
     <button>
         Singup 
     </button>
 </form>
+
+{% endblock %}
