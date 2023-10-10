@@ -1,14 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Singin</h1>
+<h4>para continuar navegando</h3>
+<h1>Inicia Sesión!</h1>
 
 {{error}}
 <form action="/singin/" method="POST">
     {% csrf_token %}
     {{form.as_p}}
     <button>
-        SING IN 
+        Iniciar 
     </button>
 </form>
 {% endblock %}
